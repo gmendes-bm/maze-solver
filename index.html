@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maze Solver</h1>
+        
+        <div class="controls">
+            <div class="input-group">
+                <label for="width">Width:</label>
+                <input type="number" id="width" min="5" step="2" value="15">
+            </div>
+            
+            <div class="input-group">
+                <label for="height">Height:</label>
+                <input type="number" id="height" min="5" step="2" value="15">
+            </div>
+            
+            <button id="btn-generateMaze">Generate Random Maze</button>
+        </div>
+
+        <div class="maze-container" id="maze-container">
+            <canvas id="mazeCanvas" height="614" width="614"></canvas> <!--height and width: (dimCell + padding) * width or height - padding -->
+        </div>
+
+        <div class="solver-controls">
+            <select id="algorithm">
+                <option value="bfs">Breadth-First Search</option>
+                <option value="dfs">Depth-First Search</option>
+            </select>
+            
+            <div class="input-group">
+                <label for="speed">Speed (0=fastest, ↑=slower):</label>
+                <input type="number" id="speed" min="0" step="10" value="100">
+            </div>
+
+            <button id="btn-visualize" class="btn-visualize" disabled>Launch Visualization</button>
+            <button id="btn-pause" class="btn-pause" hidden>Pause Visualization</button>
+            <button id="btn-resume" hidden>Resume Visualization</button>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="helpers.js"></script>
+    <script src="maze-renderer.js"></script>
+    <script src="main.js"></script>
+    <script src="algorithms/maze-generator.js"></script>
+    <script src="algorithms/bfs.js"></script>
+    <script src="algorithms/dfs.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+
+
+body {
+    background-color: #1d2a35;
+    font-family: Product-sans, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 60px;
+    padding: 5px;
+}
+
+.maze-container {
+    margin-left: 20px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #38444d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.solver-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    padding: 8px 16px;
+    background-color: #a5d6a7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-pause {
+    padding: 8px 16px;
+    background-color: #c91616;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-pause:hover {
+    background-color: #ab1212;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+}
