@@ -51,7 +51,7 @@ A web-based interactive tool for generating mazes and visualizing pathfinding al
    cd maze-solver/
    ```
 
-3. **Open `index.html`:** Open `index.html` in your web browser.
+3. **Open `index.html` in a web browser.**
 
 No additional dependencies or build steps are required.  The project is entirely client-side.
 
@@ -80,7 +80,7 @@ No additional dependencies or build steps are required.  The project is entirely
 
 ## Configuration
 
-The maze dimensions (width and height) are configurable via input fields in the HTML.  The animation speed is controlled by a input field.  Both width and height must be odd numbers greater than or equal to 5.
+The maze dimensions (width and height) are configurable via input fields in the HTML. The animation speed is controlled by an input field. Both width and height must be odd numbers greater than or equal to 5.
 
 
 ## License
