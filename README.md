@@ -2,7 +2,7 @@
 
 A web-based interactive tool for generating mazes and visualizing pathfinding algorithms. This project demonstrates core graph traversal algorithms (Breadth-First Search and Depth-First Search) and maze generation techniques with real-time visualization capabilities.  Built with JavaScript, HTML, and CSS.
 
-**Live Demo:** [https://guimendes11.github.io/maze-solver/](https://guimendes11.github.io/maze-solver/)
+**Live Demo:** [https://guimendes11.github.io/maze-solver/](https://gmendes-bm.github.io/maze-solver/)
 
 
 ## Key Features
